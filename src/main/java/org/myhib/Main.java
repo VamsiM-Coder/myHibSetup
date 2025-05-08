@@ -14,12 +14,18 @@ public class Main {
          student1.setName("Mahesh");
          student1.setAge(23);
 
+         Studentt student2 = new Studentt();
+         student1.setId(43);
+         student1.setName("Dedeepya");
+         student1.setAge(24);
+
          Configuration con = new Configuration();
          con.addAnnotatedClass(Studentt.class);
          con.configure("hibernate.cfg.xml");
          SessionFactory sf = con.buildSessionFactory();           // It is a heavy weight object it is only used once
          Session session = sf.openSession();
          session.save(student1);
+         session.save(student2);
 
          Transaction txn = session.beginTransaction();
          txn.commit();
