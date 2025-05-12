@@ -13,7 +13,8 @@ public class Jashwanthuuu {
     //@Transient
     //private String emp_address;
     private String emp_phone;
-
+    // It is used for one employee has one address only.
+    @OneToOne
     private Address a1;
 
     public Address getA1() {
