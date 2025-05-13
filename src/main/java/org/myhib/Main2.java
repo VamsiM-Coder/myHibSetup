@@ -11,15 +11,15 @@ public class Main2 {
     public static void main(String[] args) {
 
         Address add1 = new Address();
-        add1.setLid(7);
-        add1.setStreet("Bairagapateeda");
+        add1.setLid(10);
+        add1.setStreet("Raghavendra Nagar");
         add1.setCity("Tirupati");
         add1.setPincode(517501);
         add1.setState("Andhra Pradesh");
 
 
         Address add2 = new Address();
-        add2.setLid(8);
+        add2.setLid(11);
         add2.setStreet("Madiwala");
         add2.setCity("Banglore");
         add2.setPincode(560068);
@@ -34,11 +34,15 @@ public class Main2 {
 //       thuu1.setA1(add);
         //one2Many
         Many2Many many1 = new Many2Many();
-        many1.setId(102);
-        many1.setEmp_name("Jashwanth Kumar");
-        many1.setEmp_phone("8688751909");
+        many1.setId(103);
+        many1.setEmp_name("Vamsi");
+        many1.setEmp_phone("8500221235");
         many1.setAddress(Arrays.asList(add1,add2));
 
+
+        //One2Many and Many2One
+        add1.setMany2Many(many1);
+        add2.setMany2Many(many1);
 
         SessionFactory sf = new Configuration()
                 //.addAnnotatedClass(Jashwanthuuu.class)

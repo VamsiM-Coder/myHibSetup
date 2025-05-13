@@ -12,7 +12,8 @@ public class Many2Many {
     private int id;
     private String emp_name;
     private String emp_phone;
-    @OneToMany
+    //OneToMany
+    @OneToMany(mappedBy = "many2Many")
     private List<Address> address;
 
     public List<Address> getAddress() {

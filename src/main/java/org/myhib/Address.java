@@ -3,6 +3,7 @@ package org.myhib;
 import jakarta.persistence.Embeddable;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.ManyToOne;
 
 //without embedded it shows Not determine java type org.myhib.Address so we can solve this by annotate Embeddable
 @Entity
@@ -14,6 +15,10 @@ public class Address {
     private String city;
     private String state;
     private int pincode;
+
+    // Without 3rd table we can store the result
+    @ManyToOne
+    private Many2Many many2Many;
 
     public String getCity() {
         return city;
@@ -53,6 +58,14 @@ public class Address {
 
     public void setStreet(String street) {
         this.street = street;
+    }
+
+    public Many2Many getMany2Many() {
+        return many2Many;
+    }
+
+    public void setMany2Many(Many2Many many2Many) {
+        this.many2Many = many2Many;
     }
 
     @Override
