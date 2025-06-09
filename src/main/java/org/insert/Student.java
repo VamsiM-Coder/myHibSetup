@@ -1,14 +1,15 @@
-package org.myhib;
+package org.insert;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 
 @Entity
-public class Studentt {
+public class Student {
     @Id
     private int id;
     private String name;
     private int age;
+
 
     public int getId() {
         return id;
