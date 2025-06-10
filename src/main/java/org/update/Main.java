@@ -1,4 +1,4 @@
-package org.retrieve;
+package org.update;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -12,16 +12,6 @@ public class Main {
     public static void main(String[] args) {
 
 
-
-
-        // It is used only once right so we can reduce 3 lines to 1 line it's easier to manage
-//         Configuration con = new Configuration();
-//         con.addAnnotatedClass(Student.class);
-//         con.configure("hibernate.cfg.xml");
-
-        // we want to close manually the resources this may lead resource leak or by try and catch block
-        //SessionFactory sf = con.buildSessionFactory();           // It is a heavy weight object it is only used once
-
         SessionFactory sf = new Configuration()
                 .addAnnotatedClass(Student.class)
                 .configure().
@@ -29,15 +19,11 @@ public class Main {
 
         Session session = sf.openSession();
 
-        // It says save method is depreciated from hibernate 6.0  show we can use persist
-        //session.save(student1);
 
 
         //While fetching the data transaction is not important, it is used when you go for manipulation
-//        Transaction txn = session.beginTransaction();
-//         txn.commit();
-
-        //student2 = session.get(Studentt.class,46);
+        // Transaction txn = session.beginTransaction();
+        Student student2 = session.get(Student.class,46);
 
         //Update
         //Transaction txn = session.beginTransaction();
