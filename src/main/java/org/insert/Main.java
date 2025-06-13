@@ -10,14 +10,14 @@ import org.hibernate.cfg.Configuration;
 public class Main {
     public static void main(String[] args) {
          Student s1 = new Student();
-         s1.setId(1);
-         s1.setName("Vamsi");
-         s1.setAge(22);
+         s1.setId(6);
+         s1.setName("Jashwanth");
+         s1.setAge(21);
 
          Student s2 = new Student();
-         s2.setId(2);
-         s2.setName("Himanth");
-         s2.setAge(23);
+         s2.setId(7);
+         s2.setName("Chinni");
+         s2.setAge(22);
 
          // It is used only once right so we can reduce 3 lines to 1 line it's easier to manage
 //         Configuration con = new Configuration();
