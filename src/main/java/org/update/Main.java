@@ -32,7 +32,7 @@ public class Main {
 
         // This query first fetch the particular id if it is not found it creates a new row with 0 id otherwise it give updated result
         session.merge(s1);
-       // session.merge(s2);
+        session.merge(s2);
         txn.commit();
         session.close();
         sf.close();
