@@ -22,6 +22,7 @@ public class Main {
 
         // To delete
         // FIRST we want to get the data by id and it fetch id details and wrote a delete query
+        // If id is not present, we unable to delete the data in table.
         List<Integer> idsToDelete = Arrays.asList(2, 3);
 
         for (Integer id : idsToDelete) {
