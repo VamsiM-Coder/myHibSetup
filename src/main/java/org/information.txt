@@ -1,0 +1,45 @@
+CRUD stands for:
+
+  C: Create (Insert)
+
+  R: Read (Select)
+
+  U: Update (Modify)
+
+  D: Delete (Remove)
+
+ Hibernate provides an easy way to perform these operations through its ORM (Object-Relational Mapping) capabilities.
+
+ Before using CRUD operations:
+
+  -> Add Hibernate and database dependencies (e.g., MySQL).
+
+  -> Configure hibernate.cfg.xml with DB credentials.
+
+  -> Create a POJO with @Entity annotation.
+
+  -> Use SessionFactory and Session to interact with DB.
+
+  For Single Data retrieval we go for session.get(Student.class, id)
+
+  For multiple we use HQL query like  s.createQuery("from Student", Student.class).list();
+
+  Why use session.get() for single data?
+   🔹 1. Optimized for Primary Key Lookup
+    session.get(Class, id) is specially optimized to retrieve entities by their primary key.
+
+    Internally, it checks:
+
+    First-level cache (session cache)
+
+    Then hits the database only if needed
+
+    It’s faster and cleaner for ID-based lookup.
+
+   🔹 2. No HQL/SQL Needed
+    get() is a built-in Hibernate method:
+    It’s concise
+    No need to write or manage HQL strings
+    Reduces risk of syntax errors
+
+

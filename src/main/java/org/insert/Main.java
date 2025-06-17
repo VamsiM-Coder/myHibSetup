@@ -25,7 +25,7 @@ public class Main {
 //         con.configure("hibernate.cfg.xml");
 
          // we want to close manually the resources this may lead resource leak or by try and catch block
-         //SessionFactory sf = con.buildSessionFactory();           // It is a heavy weight object it is only used once
+         //SessionFactory sf = con.buildSessionFactory(); // It is a heavy weight object it is only used once
 
          SessionFactory sf = new Configuration()
                  .addAnnotatedClass(Student.class)
