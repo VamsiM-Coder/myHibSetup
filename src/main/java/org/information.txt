@@ -43,3 +43,11 @@ CRUD stands for:
     Reduces risk of syntax errors
 
 
+Hibernate.cfg.xml Usee:
+
+Feature	                                Purpose
+DB Connection Settings	     URL, driver, username, password
+SQL Dialect	                 Optimize SQL generation
+Entity Mapping	             Link Java classes or XML to DB tables
+Hibernate Options	         Logging, schema generation, fetch strategies
+Pooling	                     Connection management settings
