@@ -43,7 +43,9 @@ CRUD stands for:
     Reduces risk of syntax errors
 
 
-Hibernate.cfg.xml Usee:
+Hibernate.cfg.xml Usee:The hibernate.cfg.xml file in Hibernate is a configuration file that plays a key role in setting up the Hibernate framework.
+                       It defines how Hibernate connects to the database and manages other settings like dialect,
+                       mapping resources, and connection pooling.
 
 Feature	                                Purpose
 DB Connection Settings	     URL, driver, username, password
