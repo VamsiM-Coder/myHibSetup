@@ -16,6 +16,7 @@ public class Main {
                 .buildSessionFactory();
         Session s = sf.openSession();
 
+        // To get multiple data we go for HQL..
         s1 = s.createQuery("from Student", Student.class).list();
 
         s.close();
