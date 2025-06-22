@@ -38,7 +38,7 @@ public class Main {
          //session.save(student1);
          Transaction txn = session.beginTransaction();
          session.persist(s1);
-         session.persist(s2);
+         session.persist(s2); //Insert data.
          txn.commit();
 
          session.close();
