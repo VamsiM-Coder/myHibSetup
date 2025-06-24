@@ -21,6 +21,8 @@ public class Main {
 
         //While fetching the data transaction is not important, it is used when you go for manipulation
         // Transaction txn = session.beginTransaction();
+
+
          s1 = session.get(Student.class,2);
 
          session.close();

@@ -30,7 +30,7 @@ public class Main {
 
         Transaction txn = session.beginTransaction();
 
-        // This query first fetch the particular id if it is not found it creates a new row with 0 id otherwise it give updated result
+        // This query first fetch the particular id if it is not found it creates a new row with 0 id otherwise it give updated result.
 
         session.merge(s1);
         session.merge(s2);
