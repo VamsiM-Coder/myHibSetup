@@ -17,7 +17,6 @@ public class Main {
         Session s = sf.openSession();
 
         // To get multiple data we go for HQL.
-        //helloo
         s1 = s.createQuery("from Student", Student.class).list();
 
         s.close();
