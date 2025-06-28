@@ -17,7 +17,11 @@ public class Main {
         Session s = sf.openSession();
 
         // To get multiple data we go for HQL.
+<<<<<<< HEAD
         // Hibernate query language
+=======
+// Retrieving information.
+>>>>>>> 52154fdbaafd18485da35217c1fbbafb6be9ba72
         s1 = s.createQuery("from Student", Student.class).list();
 
         s.close();
