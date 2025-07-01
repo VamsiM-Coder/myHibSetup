@@ -19,8 +19,9 @@ public class Main {
 
         Session session = sf.openSession();
 
-        //While fetching the data transaction is not important, it is used when you go for manipulation
+        // While fetching the data transaction is not important, it is used when you go for manipulation
         // Transaction txn = session.beginTransaction();
+        //
 
 
          s1 = session.get(Student.class,2);
