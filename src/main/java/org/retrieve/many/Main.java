@@ -16,7 +16,7 @@ public class Main {
                 .buildSessionFactory();
         Session s = sf.openSession();
 
-        // To get multiple data we go for HQL
+        // To get multiple data we go for HQL(Hibernate Query Language)
         s1 = s.createQuery("from Student", Student.class).list();
 
         s.close();
