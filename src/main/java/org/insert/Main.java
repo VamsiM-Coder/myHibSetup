@@ -19,6 +19,8 @@ public class Main {
          s2.setName("Chinni");
          s2.setAge(22);
 
+         // It is not recommended.
+
          // It is used only once right so we can reduce 3 lines to 1 line it's easier to manage
 //         Configuration con = new Configuration();
 //         con.addAnnotatedClass(Student.class);
