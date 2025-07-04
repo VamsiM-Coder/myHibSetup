@@ -37,7 +37,10 @@ public class Main {
          Session session = sf.openSession();
 
          // It says save method is depreciated from hibernate 6.0  show we can use persist
+         // It is older version method.s
          //session.save(student1);
+
+
          Transaction txn = session.beginTransaction();
          session.persist(s1);
          session.persist(s2); //Insert data.
