@@ -1,7 +1,8 @@
 Hibernate Overview :
 
     Hibernate is an open-source Object-Relational Mapping (ORM) framework for Java. 
-    It simplifies database interactions by mapping Java classes to database tables and Java data types to SQL data types. It enables developers to interact with databases using Java objects without writing extensive SQL queries.
+    It simplifies database interactions by mapping Java classes to database tables and Java data types to SQL data types.
+    It enables developers to interact with databases using Java objects without writing extensive SQL queries.
 
 Core Features :
 
