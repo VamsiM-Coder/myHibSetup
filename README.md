@@ -6,13 +6,13 @@ Hibernate Overview :
 
 Core Features :
 
-   > ORM (Object Relational Mapping)	Maps Java objects to relational database tables
-   > Automatic Table Creation	Automatically generates schema from Java classes
-   > HQL (Hibernate Query Language)	A powerful, object-oriented query language similar to SQL
-   > Caching	Supports first-level and second-level caching for performance
-   > Transactions	Built-in support for transaction management
-   > Lazy Loading	Loads child objects on demand to optimize performance
-   > Database Independence	Reduces coupling by abstracting SQL and DB-specific features
+   > ORM (Object Relational Mapping)   :  Maps Java objects to relational database tables
+   > Automatic Table Creation	       :  Automatically generates schema from Java classes
+   > HQL (Hibernate Query Language)	   :  A powerful, object-oriented query language similar to SQL
+   > Caching	                       :  Supports first-level and second-level caching for performance
+   > Transactions                      :  Built-in support for transaction management
+   > Lazy Loading	                   :  Loads child objects on demand to optimize performance
+   > Database Independent              :  Reduces coupling by abstracting SQL and DB-specific features
 
 Architecture :
 
