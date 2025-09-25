@@ -20,7 +20,6 @@ Core Features :
    
    *Database Independent              :  Reduces coupling by abstracting SQL and DB-specific features
 
-
 Architecture :
 
     > Configuration – Contains DB connection properties and mapping files.
